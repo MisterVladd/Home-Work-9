@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+form {
+  max-width: 500px;
+  padding: 40px;
+}
+.field {
+  display: block;
+  margin-bottom: 15px;
+}
+.field__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  letter-spacing: 0.01em;
+  color: #b8bcca;
+  margin-bottom: 2px;
+}
+.field__input {
+  width: 100%;
+  outline: 0;
+  padding: 12px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  letter-spacing: 0.01em;
+  color: #3b4256;
+  border-radius: 4px;
+  border: 0;
+  background: #f8fafc;
+}
+.field__input::placeholder {
+  color: #b8bcca;
+}
+.field__textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 400px;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.radio__input{
+  display: none;
+}
+.radio__input:checked ~ .radio__box .radio__circle {
+  transform: scale(1);
+}
+.radio__box {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #3b4256;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radio__circle {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #3b4256;
+  transform: scale(0);
+  transition: 0.5s all ease-in-out;
+}
+.radio__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #3b4256;
+}
+.button{
+  display: inline-block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 16px 40px;
+    border-radius: 999px;
+    background: linear-gradient(93deg, #e1e1e1 8.37%, #28b02e 99.95%);
+    box-shadow: 0px 4px 50px 0px rgba(37, 37, 37, 0.08), 1px 1px 1px 0px rgba(135, 135, 135, 0.32) inset;
+    color: #24282e;
+    font-size: 18px;
+    font-weight: 600;
+}
